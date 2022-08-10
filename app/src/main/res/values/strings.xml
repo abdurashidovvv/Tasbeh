@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Tasbeh</string>
+    <string name="tasbeeh">Tasbeeh</string>
+    <string name="stopper">Stopper:</string>
+    <string name="_99">99</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="_44">44</string>
 </resources>

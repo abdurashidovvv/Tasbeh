@@ -10,8 +10,9 @@
         <entry key="..\:/Projects/Tasbeeh/app/src/main/res/drawable/ic_baseline_alarm_on_24.xml" value="0.214" />
         <entry key="..\:/Projects/Tasbeeh/app/src/main/res/drawable/normal_btn.xml" value="0.1765" />
         <entry key="..\:/Projects/Tasbeeh/app/src/main/res/drawable/pressed_button.xml" value="0.1765" />
-        <entry key="..\:/Projects/Tasbeeh/app/src/main/res/layout/activity_main.xml" value="0.18" />
-        <entry key="..\:/Projects/Tasbeeh/app/src/main/res/layout/activity_main2.xml" value="0.5" />
+        <entry key="..\:/Projects/Tasbeeh/app/src/main/res/layout-v28/activity_main.xml" value="0.209375" />
+        <entry key="..\:/Projects/Tasbeeh/app/src/main/res/layout/activity_main.xml" value="0.1718683197947841" />
+        <entry key="..\:/Projects/Tasbeeh/app/src/main/res/layout/activity_main2.xml" value="0.16" />
         <entry key="..\:/Projects/Tasbeeh/app/src/main/res/layout/stopper_dialog.xml" value="0.1" />
       </map>
     </option>

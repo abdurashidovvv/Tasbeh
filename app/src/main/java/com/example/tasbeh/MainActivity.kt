@@ -6,6 +6,7 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.Color
 import android.media.MediaPlayer
+import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,6 +32,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+
 
 
         if (MyObject.color != null) {
@@ -90,6 +94,13 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
+
+        rate_us.setOnClickListener {
+            val intent=Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse("https://kun.uz/"))
+            startActivity(intent)
+        }
+
         reset_btn.setOnClickListener {
             count=0
             editor.putInt("keyCount", count)
@@ -135,6 +146,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
             mDialogView.ok_btn.setOnClickListener {
                 //dismiss alertDialog
                 if (mDialogView.new_stopper_number.text.isEmpty() || mDialogView.new_stopper_number.text.toString().first()=='0'){
@@ -154,6 +166,7 @@ class MainActivity : AppCompatActivity() {
                 mAlertDialog.dismiss()
             }
         }
+
     }
 
     override fun onStart() {
@@ -164,6 +177,9 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+
+
 
     }
 

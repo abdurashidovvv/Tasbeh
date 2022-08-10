@@ -1,5 +1,6 @@
 package com.example.tasbeh
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
@@ -14,16 +15,17 @@ class MainActivity2 : AppCompatActivity() {
     var hext=""
     var rgb=""
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        colorpicker.isDrawingCacheEnabled=true
-        colorpicker.buildDrawingCache(true)
+        activity2_display.isDrawingCacheEnabled=true
+        activity2_display.buildDrawingCache(true)
 
-        colorpicker.setOnTouchListener { v, event ->
+        activity2_display.setOnTouchListener { v, event ->
             if (event.action==MotionEvent.ACTION_DOWN || event.action == MotionEvent.ACTION_MOVE) {
-                bitmap = colorpicker.drawingCache
+                bitmap = activity2_display.drawingCache
                 val pixel = bitmap.getPixel(event.x.toInt(), event.y.toInt())
                 val r = Color.red(pixel)
                 val g = Color.green(pixel)

@@ -4,6 +4,7 @@
     package="com.example.tasbeh">
 
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 
     <application
