@@ -1,4 +1,4 @@
-package com.example.tasbeh
+package com.abdurashidov.tasbeh
 
 import android.graphics.drawable.Drawable
 

@@ -1,4 +1,4 @@
-package com.example.tasbeh
+package com.abdurashidov.tasbeh
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
 
         if (MyObject.color != null) {
-            display_counter.background=MyObject.color
+            display_counter.background= MyObject.color
         }
 
         menu_theme.setOnClickListener {
@@ -74,9 +74,9 @@ class MainActivity : AppCompatActivity() {
                 val vibr=(getSystemService(Context.VIBRATOR_SERVICE) as Vibrator)
                 if (checkVibr){
                     if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
-                        vibr.vibrate(VibrationEffect.createOneShot(500,VibrationEffect.DEFAULT_AMPLITUDE))
+                        vibr.vibrate(VibrationEffect.createOneShot(30,VibrationEffect.DEFAULT_AMPLITUDE))
                     }else{
-                        vibr.vibrate(500)
+                        vibr.vibrate(30)
                     }
                 }
                 Toast.makeText( this, "Stopper value reached !!!", Toast.LENGTH_SHORT).show()
@@ -87,18 +87,12 @@ class MainActivity : AppCompatActivity() {
             val vibr=(getSystemService(Context.VIBRATOR_SERVICE) as Vibrator)
             if (checkVibr){
                 if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
-                    vibr.vibrate(VibrationEffect.createOneShot(200,VibrationEffect.DEFAULT_AMPLITUDE))
+                    vibr.vibrate(VibrationEffect.createOneShot(30,VibrationEffect.DEFAULT_AMPLITUDE))
                 }else{
-                    vibr.vibrate(200)
+                    vibr.vibrate(30)
                 }
             }
 
-        }
-
-        rate_us.setOnClickListener {
-            val intent=Intent(Intent.ACTION_VIEW)
-            intent.setData(Uri.parse("https://kun.uz/"))
-            startActivity(intent)
         }
 
         reset_btn.setOnClickListener {
@@ -173,7 +167,7 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         setContentView(main_display)
         if (MyObject.color != null) {
-            display_counter.background=MyObject.color
+            display_counter.background= MyObject.color
         }
 
     }

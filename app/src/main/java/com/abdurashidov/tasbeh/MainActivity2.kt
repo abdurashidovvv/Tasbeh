@@ -1,4 +1,4 @@
-package com.example.tasbeh
+package com.abdurashidov.tasbeh
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MotionEvent
+import com.abdurashidov.tasbeh.R
 import kotlinx.android.synthetic.main.activity_main2.*
 
 class MainActivity2 : AppCompatActivity() {
@@ -35,7 +36,7 @@ class MainActivity2 : AppCompatActivity() {
 
                 rgb = "$r$g$b"
                 activity2_display.setBackgroundColor(Color.rgb(r, g, b))
-                MyObject.color=activity2_display.background
+                MyObject.color =activity2_display.background
             }
             true}
 
